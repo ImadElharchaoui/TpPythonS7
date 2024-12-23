@@ -18,8 +18,8 @@ class Panier:
     def calculer_total(self):
         return sum(c.calculer_prix() for c in self.commandes)
 
-produit = Produit("pc", 150)
-commande = Commande(produit, 2)
+p1 = Produit("pc", 150)
+commande = Commande(p1, 2)
 panier = Panier()
 panier.ajouter_commande(commande)
 print(panier.calculer_total()) 
